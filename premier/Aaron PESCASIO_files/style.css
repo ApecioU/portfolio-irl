@@ -1,0 +1,87 @@
+.background{
+    background: linear-gradient(to right top, rgb(31, 50, 63), rgb(15, 15, 15));
+}
+
+.header {
+    padding: 15px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-family: Arial;
+}
+
+.body{
+    text-align: center;
+}
+
+.footer{
+    padding: 15px;
+    text-align: center;
+    color: white;
+    font-size: 10px;
+    font-family: Arial;
+}
+
+.espacement{
+    color: rgba(255, 255, 255, 0);
+}
+
+.button{
+    padding-top: 15px;
+    border: 0;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(72, 126, 81);
+    text-align: center;
+    font-family: Calibri;
+}
+
+.titre{
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    font-family: Calibri;
+    font-style: bold;
+}
+
+.contenu{
+    color: rgb(189, 190, 228);
+    font-size: 20px;
+    font-family: Calibri;
+}
+
+.date{
+    color: rgb(130, 143, 255);
+    font-size: 18px;
+    font-family: Calibri;
+    font-style: italic;
+}
+
+.commentaire{
+    color: rgb(176, 166, 233);
+    font-size: 17px;
+    font-family: Calibri;
+}
+
+table{
+    width:100%;
+}
+
+td{
+    width:100%;
+}
+
+.lien{
+    color: rgb(72, 126, 81);
+}
+
+a:link{
+    color: rgb(72, 126, 81);
+}
+
+a:hover{
+    color: rgb(72, 126, 81);
+}
+
+a:visited{
+    color: rgb(72, 126, 81);
+}
