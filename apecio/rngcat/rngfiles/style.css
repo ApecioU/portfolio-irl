@@ -836,10 +836,10 @@ section.section:nth-child(3n+3) {
 }
 
 #footer {
-	padding: 3em 0;
-	background: #000;
+	padding: 0.05em 0;
+	background: #200c2a;;
 	font-size: 90%;
-	color: #9da3af
+	color: #9da3af;
 }
 
 .js-clingify-ztransform,
