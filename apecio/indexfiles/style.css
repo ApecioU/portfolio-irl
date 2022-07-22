@@ -1,6 +1,13 @@
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 40%;
+}
 .removelink {
 	text-decoration: none;
 }
+
 
 .XavQL {
 	position: absolute;
@@ -486,7 +493,7 @@ table {
 }
 
 html,
-body {
+body, input {
 	font-family: 'Source Sans Pro', 'Helvetica Neue', 'Arial', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
 	background: #fff;
 	color: #3a3e4a;

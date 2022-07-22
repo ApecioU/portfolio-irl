@@ -123,11 +123,9 @@
             <p class="lead">
                 <style>
                     #myInput {
-                        color: red background: rgba(0, 0, 0, 0);
                         outline: none;
                         background: transparent;
                         border: none;
-                        # background-image: url('https://i.ibb.co/hymZX6m/searchicon.png');
                         background-position: 10px 12px;
                         background-repeat: no-repeat;
                         width: 100%;
@@ -155,11 +153,11 @@
 
                 <input type="text" id="myInput" oninput="myFunction()"
                     placeholder="Veuillez chercher des mots-clés ici, exemple: Ghost DELL"
-                    title="Veuillez chercher des mots-clés ici, exemple: Ghost DELL">
+                    title="Veuillez chercher des mots-clés ici, exemple: Ghost DELL" />
 
             <ul id="myUL">
                 <hr>
-                <li><a href="javascript:void(0)">
+                <li><span class="detailsHolder">
                         <details>
                             <summary class="lead">
                                 Annexes / Définitions
@@ -173,7 +171,7 @@
                                 <p class="lead">
 
                                     <br>
-                                    En informatique : un master est un "ghost" de poste de travail. En effet,
+                                    En informatique</a> : un master est un "ghost" de poste de travail. En effet,
                                     c'est une
                                     image d'un disque dur entier que l'on clone avec l'aide de Norton Ghost ou
                                     de PC Cloner
@@ -300,10 +298,10 @@
                                     une imprimante ou une demande de changement de poste. </p>
                             </details>
                         </details>
-                    </a></li>
+                    </span></li>
 
                 <hr>
-                <li><a href="javascript:void(0)">
+                <li><span class="detailsHolder">
                         <details>
                             <summary class="lead">
                                 Tickets GLPI (Câblage, Vidéo projecteur, Son):
@@ -463,9 +461,9 @@
                             </details>
                             <br>
                         </details>
-                    </a></li>
+                    </span></li>
                 <hr>
-                <li><a href="javascript:void(0)">
+                <li><span class="detailsHolder">
                         <details>
                             <summary class="lead">
                                 Scripts / GPO
@@ -495,9 +493,9 @@
 
                             </details>
                         </details>
-                    </a></li>
+                    </span></li>
                 <hr>
-                <li><a href="javascript:void(0)">
+                <li><span class="detailsHolder">
                         <details>
                             <summary class="lead">
                                 Ghost (DELL, HP, Lenovo)
@@ -525,7 +523,7 @@
                                     Ensuite, on allume le PC et on tape la touche F12 pour aller dans le BIOS.
                                     <br> Il faut également vérifier que le Secure Boot est désactivé et que le
                                     mode AHCI est
-                                    bien activé. Pour configurer cela, il faut tout simplement aller dans "Boot
+                                    bien activé. Pour configurer cela, il faut tout simplement aller dans "BIOS
                                     Setup"
                                     <br>
                                     <br>
@@ -724,9 +722,9 @@
                             </details>
 
                         </details>
-                    </a></li>
+                    </span></li>
                 <hr>
-                <li><a href="javascript:void(0)">
+                <li><span class="detailsHolder">
                         <details>
                             <summary class="lead">
                                 Outils utilisés
@@ -1035,14 +1033,8 @@
 
                             </details>
                         </details>
-                    </a></li>
-                    
-                <!--<hr>
-                        <li><a href="javascript:void(0)"> </a></li>
-                        <hr>
-                        <li><a href="javascript:void(0)"> </a></li>
-                        <hr>
-                        <li><a href="javascript:void(0)"> </a></li>-->
+                    </span></li>
+
 
 
             </ul>
@@ -1069,31 +1061,8 @@
     <!--Script JS pour le menu déroulant-->
     <script src="/igsfiles/background.js"></script>
     <!--Script JS pour les images de fond aléatoires-->
-    <script>
-        function myFunction() {
-            var input, filter, ul, li, a, i, txtValue;
-            input = document.getElementById("myInput");
-            filter = input.value.toUpperCase();
-            ul = document.getElementById("myUL");
-            li = ul.getElementsByTagName("li");
-            for (i = 0; i < li.length; i++) {
-                a = li[i].getElementsByTagName("a")[0];
-                txtValue = a.textContent || a.innerText;
-                if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                    li[i].style.display = "";
-                    [...li[i].querySelectorAll("details")]
-                        .map(details => { details.removeAttribute("open"); return details; })
-                        .filter(details => details.textContent.toUpperCase().indexOf(filter) > 1)
-                        .forEach(details => details.setAttribute("open", "true"));
-                    const markInstance = new Mark(li[i]);
-                    markInstance.unmark();
-                    markInstance.mark(filter);
-                } else {
-                    li[i].style.display = "none";
-                }
-            }
-        }
-    </script>
+    <script src="/igsfiles/searchbar.js"></script>
+
 </body>
 
 </html>
